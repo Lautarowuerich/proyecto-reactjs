@@ -1,10 +1,19 @@
 import React from "react";
-import Navbar from "../../proyecto-react/src/components/navbar/navbar"
+import Navbar from "../../proyecto-react/src/components/navbar/navbar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
+
+  const mensaje = "Estamos en mantenimiento, por favor vuelva pronto"
+
+
   return (
-    <Navbar/>
+    <>
+      <Navbar/>
+      <ItemListContainer 
+      greeting ={mensaje}/>
+    </>
   );
-}
+};
 
 export default App;

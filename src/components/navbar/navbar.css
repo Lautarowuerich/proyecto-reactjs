@@ -39,6 +39,7 @@ h1{
 
 section{
     margin-right: 100px;
+    display: flex;
 }
 
 .MuiSvgIcon-root{

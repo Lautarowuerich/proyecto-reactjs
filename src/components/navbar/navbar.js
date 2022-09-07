@@ -1,7 +1,7 @@
 import React from 'react';
-import "./navbar.css"
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import "./navbar.css";
 import PersonIcon from '@mui/icons-material/Person';
+import CartWidget from "../CartWidget/CartWidget"
 
 function navbar(){
     return(
@@ -28,7 +28,7 @@ function navbar(){
             </nav>
             
             <section>
-                <ShoppingCartIcon fontSize="large"/>
+                <CartWidget/>
                 <PersonIcon fontSize="large"/>
             </section>
         </header>
