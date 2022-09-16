@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../proyecto-react/src/components/navbar/navbar";
+import Navbar from "./components/navbar/navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
