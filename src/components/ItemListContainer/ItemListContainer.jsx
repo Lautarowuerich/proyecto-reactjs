@@ -3,7 +3,7 @@ import '../ItemListContainer/itemListContainer.css'
 import ItemCount from '../itemCount/ItemCount'
 import ItemList from '../itemList/itemList'
 import {products} from '../../assets/productos'
-import {customFetch} from '../../fetch/fetch'
+import {customFetch} from '../../util/fetch'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
@@ -24,14 +24,16 @@ function ItemListContainer(){
 
     return (
         <>
-            <ItemCount stock={9} initial={1} />
-            {loading ?
-            <Box sx={{ display: 'flex'}}>
-            <CircularProgress />
-            </Box>
-            :
-            <ItemList listProducts={listProducts} />
+            <div className='contenedorCards'>
+                <ItemCount stock={9} initial={1} />
+                {loading ?
+                <Box sx={{ display: 'flex'}}>
+                <CircularProgress />
+                </Box>
+                :
+                <ItemList listProducts={listProducts} />
             }
+            </div>
         </>
     )  
 }

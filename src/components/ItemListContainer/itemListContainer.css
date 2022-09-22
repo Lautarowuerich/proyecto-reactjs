@@ -9,3 +9,11 @@ p{
     align-items: center;
     justify-content: center;
 }
+
+.contenedorCards{
+    display:grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
