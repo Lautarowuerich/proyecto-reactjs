@@ -1,21 +1,83 @@
 import React,{useState, useEffect} from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
 
-function ItemDetailContent (){
+const ItemDetailContent = ()=> {
 
-    const [producto, setProducto] = useState({})
+    const [producto, setproducto] = useState({});
+    const [loading, setLoading] = useState(true);
 
-    useEffect(()=>{
-        fetch('../assets/data.json')
-        .then((res)=>res.json())
-        .then((json)=>{
-            setProducto(json)
-        })
-    })
+    useEffect(() => {
 
-    return(
-        <ItemDetail producto={producto} />
-    )
+        const getItem = async() =>{ 
+        try{
+            const responseApi = await fetch('http://localhost:3000/json/15');
+            const responseParse = await responseApi.json();
+            setproducto(responseParse);
+            }
+
+        catch(err){
+            console.error(err);
+            }
+
+        finally{
+            setLoading(false);
+            }        
+        }
+
+        getItem();
+
+        }, []);
+
+        return(
+            <>
+                {loading ?
+                <Box sx={{ display: 'flex'}}>
+                <CircularProgress />
+                </Box>
+                :
+                <ItemDetail producto={producto} />
+                }
+            </>
+        )   
+    
+        
+        
+    // useEffect(() => {
+
+    //     const getItem = async() =>{ 
+    //     try{
+    //         const responseApi = await fetch('https://fakestoreapi.com/products/1');
+    //         const responseParse = await responseApi.json();
+    //         setproducto(responseParse);
+    //         }
+
+    //     catch(err){
+    //         console.error(err);
+    //         }
+
+    //     finally{
+    //         setLoading(false);
+    //         }        
+    //     }
+
+    //     getItem();
+
+    //     }, []);
+
+    // return(
+    //     <>
+    //         {loading ?
+    //         <Box sx={{ display: 'flex'}}>
+    //         <CircularProgress />
+    //         </Box>
+    //         :
+    //         <ItemDetail producto={producto} />
+    //     }
+    // </>
+    // )
+    
 }
 
 export default ItemDetailContent

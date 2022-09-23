@@ -1,11 +1,13 @@
-[
+ 
+{
+   "json":[
     {   "id": 1,
         "image": "https://essential.vtexassets.com/arquivos/ids/618203-1200-auto?v=637983163009170000&width=1200&height=auto&aspect=true",
         "product": "REMERA NIKE AIR 1",  
         "precio": 10.199,
         "stock": 5,
         "categoria": "remeras"
-    }, 
+    },
     {  
         "id": 2,
         "image":"https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw304cfc30/AH6782_Z7F_20.jpg?impolicy=product&imwidth=915",
@@ -67,7 +69,7 @@
      {  "id": 10,
         "image": "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw92cca52f/HF6081_6NM_20.jpg?imwidth=915&impolicy=product",
         "product": "PANTALON DE MUJER LACOSTE",  
-        "precio": 12.010,
+        "precio": 12.019,
         "stock": 7,
         "categoria": "pantalones"
      },  
@@ -82,42 +84,43 @@
      {  "id": 12,
         "image": "https://drops-ba.com/wp-content/uploads/2022/09/adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.jpg",
         "product": "ADIDAS FORUM BUCLE LOW BAD BUNNY BLUE",  
-        "precio": 212.520,
+        "precio": 212.529,
         "stock": 8,
         "categoria": "zapatillas"
      }, 
      {   "id": 13,
         "image": "https://drops-ba.com/wp-content/uploads/2022/03/Jordan-1-Low-Mocha.jpg",
         "product": "JORDAN 1 LOW MOCHA",  
-        "precio": 95.700,
+        "precio": 95.799,
         "stock": 3,
         "categoria": "zapatillas"
      },
      {  "id": 14,
         "image": "https://drops-ba.com/wp-content/uploads/2021/09/Air-Jordan-1-Low-Black-Guava-Ice-W.jpg",
         "product": "JORDAN 1 LOW BLACK GUAVA ICE",  
-        "precio": 101.640,
+        "precio": 101.649,
         "stock": 7,
         "categoria": "zapatillas"
      },
      {  "id": 15,
         "image": "https://drops-ba.com/wp-content/uploads/2022/07/Nike-Air-Force-1-Low-_07-White-W.jpg",
         "product": "NIKE AIR FORCE 1 LOW 07 WHITE",
-        "precio": 61.600,
+        "descripcion":"Podría decirse que la silueta más iconico de Nike: la Air Force 1 Creado por Bruce Kilgore en 1982, el primer par con Nike AIR se reedita constantemente en multitud de colores cada temporada. Las Nike Air Force 1 Low 07 Triple White presentan una parte superior monocromatica de cuero de grano completo con cordones, swoosh y suela a juego. La entresuela de espuma y la amortiguacion del tobillo barantizan un ajuste comodo, mientrsa que el ribete metalico de la firma incluye AF-1 para completar el diseño para completar el diseño",
+        "precio": 61.999,
         "stock": 2,
         "categoria": "zapatillas"
      },
      {  "id": 16,
         "image": "https://drops-ba.com/wp-content/uploads/2022/08/adidas-Yeezy-Boost-350-V2-Sesame-2018-2022.jpg",
         "product": "ADIDAS YEEZY BOOST 350 V2 SESAME",  
-        "precio": 118.580,
+        "precio": 118.589,
         "stock": 15,
         "categoria": "zapatillas"
      },
      {  "id": 17,
         "image": "https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw426c3aa3/42SFA0076_082_01.jpg?imwidth=915&impolicy=product",
         "product": "ZAPATILLAS DE MUJER L--1 LACOSTE",  
-        "precio": 42.010,
+        "precio": 42.199,
         "stock": 4,
         "categoria": "zapatillas"
      },
@@ -131,7 +134,7 @@
      {  "id": 19,
         "image": "https://drops-ba.com/wp-content/uploads/2022/05/adidas-Crazy-1-Lakers-Home.jpg",
         "product": "ADIDAS CRAZY 1 LAKERS HOME",  
-        "precio": 135.520,
+        "precio": 135.519,
         "stock": 5,
         "categoria": "zapatillas"
      },
@@ -156,4 +159,5 @@
         "stock": 4,
         "categoria": "zapatillas"
      }
-]
+   ]
+}
