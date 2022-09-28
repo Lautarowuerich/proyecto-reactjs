@@ -12,7 +12,7 @@ const ItemDetailContent = ()=> {
 
         const getItem = async() =>{ 
         try{
-            const responseApi = await fetch('http://localhost:3000/json/15');
+            const responseApi = await fetch('http://localhost:5000/json/15  ');
             const responseParse = await responseApi.json();
             setproducto(responseParse);
             }
@@ -41,42 +41,6 @@ const ItemDetailContent = ()=> {
                 }
             </>
         )   
-    
-        
-        
-    // useEffect(() => {
-
-    //     const getItem = async() =>{ 
-    //     try{
-    //         const responseApi = await fetch('https://fakestoreapi.com/products/1');
-    //         const responseParse = await responseApi.json();
-    //         setproducto(responseParse);
-    //         }
-
-    //     catch(err){
-    //         console.error(err);
-    //         }
-
-    //     finally{
-    //         setLoading(false);
-    //         }        
-    //     }
-
-    //     getItem();
-
-    //     }, []);
-
-    // return(
-    //     <>
-    //         {loading ?
-    //         <Box sx={{ display: 'flex'}}>
-    //         <CircularProgress />
-    //         </Box>
-    //         :
-    //         <ItemDetail producto={producto} />
-    //     }
-    // </>
-    // )
     
 }
 

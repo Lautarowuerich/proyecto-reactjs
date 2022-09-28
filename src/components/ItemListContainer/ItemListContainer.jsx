@@ -6,21 +6,28 @@ import {products} from '../../assets/productos'
 import {customFetch} from '../../util/fetch'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import {useParams} from 'react-router-dom' 
 
 function ItemListContainer(){
 
-    const [listProducts, setListProducts] = useState([])
+    let {IdCategoria} = useParams()
 
+    const [listProducts, setListProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
-    useEffect (() => {
-        customFetch(products)
-            .then(res =>{
-                setLoading(false)
-                setListProducts(res)
-            })
-    }, [])
+    const URL_BASE = 'http://localhost:5000/json'
+    const URL_CATEGORY = 'http://localhost:5000/json/categorias/'
 
+    useEffect(()=>{
+        fetch(`${URL_CATEGORY}${IdCategoria}`)
+        .then((res) => res.json())
+        .then((json)=>{
+            setListProducts(json)
+        })
+        .finally(() =>{
+            setLoading(false)
+        })
+    },[IdCategoria])
 
     return (
         <>
