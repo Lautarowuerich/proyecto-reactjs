@@ -12,7 +12,7 @@ const ItemDetailContent = ()=> {
 
         const getItem = async() =>{ 
         try{
-            const responseApi = await fetch('http://localhost:5000/json/15  ');
+            const responseApi = await fetch('http://localhost:5000/json/15');
             const responseParse = await responseApi.json();
             setproducto(responseParse);
             }

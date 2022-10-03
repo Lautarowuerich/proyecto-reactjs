@@ -17,26 +17,6 @@ function navbar(){
 
     return(
         <header style={style.container}>
-            {/* <h1>ShopTime</h1>
-            <nav className='navbar'>
-                <ul className='menu'>
-                    <li>
-                        <a href=''>New In</a>
-                    </li>
-                    <li>
-                        <a href=''>Hombre</a>
-                    </li>
-                    <li>
-                        <a href=''>Mujer</a>
-                    </li>
-                    <li>
-                        <a href=''>Zapatillas</a>
-                    </li>
-                    <li>
-                        <a href=''>Marcas</a>
-                    </li>
-                </ul>
-            </nav> */}
 
             <Link to={"/"}>
                 <h1>ShopTime</h1>

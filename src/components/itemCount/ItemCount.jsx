@@ -1,27 +1,27 @@
 import { useState } from 'react';
 import '../itemCount/itemCount.css'
 
-function ItemCount({initial, stock}){
+function ItemCount({initial, stock, onAdd}){
 
 
-    // const [add, setAdd] = useState(initial)
+    const [add, setAdd] = useState(initial)
 
-    // function addProduct(){
-    //     setAdd(add + 1)
-    // }
+    function addProduct(){
+        setAdd(add + 1)
+    }
 
-    // function removeProduct(){
-    //     setAdd(add - 1)
-    // }
+    function removeProduct(){
+        setAdd(add - 1)
+    }
 
     return(
         <>
-            {/* <div className='contenedor'>
-                    <button disabled={add === initial} onClick={removeProduct}>-</button>
-                    <h4>{add}</h4>
-                    <button disabled={add === stock} onClick={addProduct}>+</button>
-                    <button className='carrito'>Agregar al carrito</button>
-            </div> */}
+            <div className='contenedor'>
+                <button className='carrito' disabled={add === initial} onClick={removeProduct}>-</button>
+                <h4>{add}</h4>
+                <button className='carrito' disabled={add === stock} onClick={addProduct}>+</button> 
+            </div>
+            <button onClick={()=>onAdd(add)} className='agregarCarrito btn btn-dark'>Agregar al carrito</button>
         </>
     )
 }

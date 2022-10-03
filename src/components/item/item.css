@@ -18,7 +18,17 @@
 }
 
 .contenedorProductos .precio_producto{
+    display: flex;
+    justify-content: start;
     font-size: 20px;
-    text-align: start;
     margin-bottom: 10px;
+}
+
+.btn{
+    border:none;
+    padding: 10px 20px;
+    background-color: saddlebrown;
+    color: white;
+    font-size: 15px;
+    text-align: center;
 }

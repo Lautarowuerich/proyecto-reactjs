@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../ItemListContainer/itemListContainer.css'
-import ItemCount from '../itemCount/ItemCount'
 import ItemList from '../itemList/itemList'
-import {products} from '../../assets/productos'
-import {customFetch} from '../../util/fetch'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import {useParams} from 'react-router-dom' 
@@ -15,11 +12,11 @@ function ItemListContainer(){
     const [listProducts, setListProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const URL_BASE = 'http://localhost:5000/json'
-    const URL_CATEGORY = 'http://localhost:5000/json/categorias/'
+    // const URL_BASE = 'http://localhost:5000/json'
+    // const URL_CATEGORY = 'http://localhost:5000/json/categoria'
 
     useEffect(()=>{
-        fetch(`${URL_CATEGORY}${IdCategoria}`)
+        fetch(`http://localhost:5000/json`)
         .then((res) => res.json())
         .then((json)=>{
             setListProducts(json)
@@ -32,7 +29,6 @@ function ItemListContainer(){
     return (
         <>
             <div className='contenedorCards'>
-                <ItemCount stock={9} initial={1} />
                 {loading ?
                 <Box sx={{ display: 'flex'}}>
                 <CircularProgress />

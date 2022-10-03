@@ -7,3 +7,17 @@
 .descripcionCard{
     display: flex;
 }
+
+.contenedorProductosDetail{
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.precio_detalle{
+    width: 200px;
+    height: 5px;
+}
